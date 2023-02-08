@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "6cbdd584-9def-4501-931c-db0e17b95fff",
+		"name": "Instituto microservicio-asignatura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3961275"
+	},
+	"item": [
+		{
+			"name": "listado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/asignatura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"asignatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registrar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contenido\": \"Desarrolla Portal Web en base a conceptos de la Programación reactiva\",\r\n    \"costo\": \"102.51\",\r\n    \"creditos\": \"4\",\r\n    \"duracion\": \"8\",\r\n    \"nombre\": \"Programación reactiva con Spring WebFlux\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/asignatura",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"asignatura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/asignatura/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"asignatura",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Arquitectura de Sofware\",\r\n    \"creditos\": \"6\",\r\n    \"duracion\": 16,\r\n    \"contenido\": \"Conozca los princicios y disena arquitectura de sofware modernas\",\r\n    \"costo\": 302.51\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/asignatura/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"asignatura",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/asignatura/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"asignatura",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
